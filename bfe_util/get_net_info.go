@@ -26,9 +26,6 @@ import (
 	"github.com/baidu/bfe/bfe_tls"
 )
 
-import (
-	sys "golang.org/x/sys/unix"
-)
 
 // CloseWriter is the interface that wraps the basic CloseWrite method.
 type CloseWriter interface {
@@ -88,8 +85,9 @@ func GetConnFile(conn net.Conn) (*os.File, error) {
 // GetsockoptMutiByte returns the value of the socket option opt for the
 // socket associated with fd at the given socket level.
 func GetsockoptMutiByte(fd, level, opt int) ([]byte, error) {
-	val, err := sys.GetsockoptString(fd, level, opt)
-	return []byte(val), err
+	//val, err := sys.GetsockoptString(fd, level, opt)
+	//return []byte(val), err
+	return []byte(nil), nil
 }
 
 // ParseIpAndPort return parsed ip address

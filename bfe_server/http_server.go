@@ -21,6 +21,7 @@
 package bfe_server
 
 import (
+	"fmt"
 	"net"
 	"time"
 )
@@ -73,6 +74,7 @@ func (srv *BfeServer) Serve(l net.Listener, raw net.Listener, proto string) erro
 	for {
 		// accept new connection
 		rw, e := l.Accept()
+		fmt.Println("wwwww-----wwww")
 		if e != nil {
 			if isTimeout(e) {
 				proxyState.ErrClientTimeout.Inc(1)

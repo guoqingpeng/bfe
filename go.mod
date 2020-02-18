@@ -11,9 +11,9 @@ require (
 	github.com/gogo/protobuf v1.3.1 // indirect
 	github.com/gomodule/redigo v2.0.0+incompatible
 	github.com/google/uuid v1.1.1 // indirect
+	github.com/oschwald/geoip2-golang v1.4.0
 	github.com/pquerna/ffjson v0.0.0-20190930134022-aa0246cd15f7
 	github.com/spaolacci/murmur3 v1.1.0
-	github.com/stretchr/testify v1.4.0 // indirect
 	github.com/zmap/go-iptree v0.0.0-20170831022036-1948b1097e25
 	go.etcd.io/etcd v3.3.18+incompatible
 	go.uber.org/zap v1.13.0 // indirect

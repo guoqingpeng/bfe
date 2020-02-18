@@ -28,10 +28,10 @@ import (
 )
 
 import (
-	"github.com/baidu/bfe/bfe_config/bfe_conf"
-	"github.com/baidu/bfe/bfe_debug"
-	"github.com/baidu/bfe/bfe_server"
-	"github.com/baidu/bfe/bfe_util"
+	"github.com/bfe/bfe_config/bfe_conf"
+	"github.com/bfe/bfe_debug"
+	"github.com/bfe/bfe_server"
+	"github.com/bfe/bfe_util"
 )
 
 var (
@@ -46,6 +46,7 @@ var (
 var version string
 
 func main() {
+
 	var err error
 	var config bfe_conf.BfeConfig
 	var logSwitch string
